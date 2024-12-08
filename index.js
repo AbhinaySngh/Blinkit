@@ -1,4 +1,4 @@
-import express, { response } from 'express'
+import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -23,7 +23,7 @@ const PORT = 8080 || process.env.PORT
 
 app.get("/",(request,response) =>{
     response.json({
-        message : "Server us running " + PORT
+        message : "Server is running " + PORT
     })
 })
 
